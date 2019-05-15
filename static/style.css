@@ -1,0 +1,32 @@
+/* Element classes */
+
+body {
+    transition: background-color 2s ease-in;
+}
+
+/* font classes */
+
+.Space-mono {
+    font-family: 'Space Mono', monospace;
+
+}
+
+.Sofia {
+    font-family: 'Sofia', cursive;
+}
+
+.SofiaItalic {
+    font-family: 'Sofia', cursive;
+    font-style: italic;
+}
+
+/* desktop/mobile css */
+#content-desktop {display: block;}
+#content-mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+
+#content-desktop {display: none;}
+#content-mobile {display: block;}
+
+}
