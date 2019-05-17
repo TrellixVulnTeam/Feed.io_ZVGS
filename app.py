@@ -24,6 +24,7 @@ def post_javascript_data():
     return jsonify(d)
 
 
+
 # Routes
 
 # root\default route
@@ -35,7 +36,6 @@ def root():
 @app.route('/login')
 def login_route():
     return ''
-
 
 # profile\user page 
 @app.route('/user/<username>')

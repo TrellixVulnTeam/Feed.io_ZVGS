@@ -1,9 +1,11 @@
+# Import the Firebase service
 import firebase_admin
-from firebase_admin import credentials
-from firebase_admin import firestore
+from firebase_admin import auth
 
-# Use a service account
-cred = credentials.Certificate('../Credentials/Firebase.json')
-firebase_admin.initialize_app(cred)
 
-db = firestore.client()
+# Initialize the default app
+default_app = firebase_admin.initialize_app(cred)
+print(default_app.name)  # "[DEFAULT]"
+
+# Retrieve services via the auth package...
+# auth.create_custom_token(...)

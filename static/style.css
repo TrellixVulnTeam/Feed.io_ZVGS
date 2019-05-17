@@ -30,3 +30,9 @@ body {
 #content-mobile {display: block;}
 
 }
+
+.center {
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+}
